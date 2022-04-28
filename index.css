@@ -1,0 +1,57 @@
+
+ 
+body{
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope';
+    
+}
+
+.box{
+    display: block;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 20%;
+    padding: 1px;
+}
+h5{
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+    font-weight: 800;
+    letter-spacing: 2px;
+    
+}
+article{
+    font-size: 28px;
+    color: lightgray;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+div {
+    width: 90%;
+    margin:0px auto;
+    margin-bottom: 56px;
+}
+figure{
+    position: absolute;
+   left: 181px;
+   bottom: -15%;
+  border-radius: 100%;
+  background-color: hsl(150, 100%, 66%);
+  
+}
+figure img{
+    display: block;
+    padding: 13px;
+    margin: auto;
+}
+
+figure:hover{
+background-color: #93ecc1;
+box-shadow: 0 0 11px rgba(33,33,33,.2); 
+cursor: pointer;
+}
