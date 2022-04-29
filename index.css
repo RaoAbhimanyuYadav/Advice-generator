@@ -5,15 +5,20 @@ body{
     font-family: 'Manrope';
     
 }
+#flex-container{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    min-height: 39vw;
+}
 
 .box{
     display: block;
     background-color: hsl(217, 19%, 24%);
     border-radius: 10px;
-    max-width: 500px;
     position: relative;
-    margin: auto;
-    margin-top: 20%;
+    max-width: 500px;
+    min-width: 500px;
     padding: 1px;
 }
 h5{
@@ -68,6 +73,12 @@ cursor: pointer;
     }
     .box{
         max-width: 340px;
+        min-width: 340px;
+        
+    }
+    #flex-container{
+        position: relative;
+        top: 180px;
     }
 }
 @media screen and (min-width:530px){
