@@ -1,6 +1,6 @@
 const heading = document.querySelector("span");
 const article = document.querySelector("article");
-const pointer = document.querySelector("section");
+const pointer = document.querySelector("figure");
 const runner = () => {
   const injector = (id, content) => {
     heading.textContent = `${id}`;
