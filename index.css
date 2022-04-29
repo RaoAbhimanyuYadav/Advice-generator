@@ -55,3 +55,26 @@ background-color: #93ecc1;
 box-shadow: 0 0 11px rgba(33,33,33,.2); 
 cursor: pointer;
 }
+@media screen and (max-width:530px){
+    .mobile{
+        display:block ;
+    }
+    .desktop{
+        display: none;
+    }
+    figure{
+       left: 101px;
+       
+    }
+    .box{
+        max-width: 340px;
+    }
+}
+@media screen and (min-width:530px){
+    .mobile{
+        display:none;
+    }
+    .desktop{
+        display: block;
+    }
+}
