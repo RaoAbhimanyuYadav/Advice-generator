@@ -44,7 +44,7 @@ div {
 figure{
     position: absolute;
    left: 223px;
-   bottom: -10%;
+   bottom: -23;
    margin: 0;
   border-radius: 100%;
   background-color: hsl(150, 100%, 66%);
@@ -69,7 +69,7 @@ cursor: pointer;
         display: none;
     }
     figure{
-       left: 101px;
+       left: 142px;
        
     }
     .box{
