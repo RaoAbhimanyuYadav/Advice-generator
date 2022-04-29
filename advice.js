@@ -1,6 +1,9 @@
-const api = "https://api.adviceslip.com/advice";
+const api = `https://api.adviceslip.com/advice/`;
+
 const advice = async () => {
-  const respone = await fetch(api);
+  const id = Math.floor(Math.random() * 200);
+
+  const respone = await fetch(api + id);
   const advice = await respone.json();
   return advice.slip;
 };

@@ -10,26 +10,26 @@ const runner = () => {
     const id = localStorage.getItem("id");
     const content = localStorage.getItem("advice");
     injector(id, content);
-  } else {
     advice()
       .then((advice) => {
-        injector(advice.id, advice.advice);
+        localStorage.setItem("id", advice.id);
+        localStorage.setItem("advice", advice.advice);
+      })
+      .catch((err) => console.log(err));
+  } else {
+    advice()
+      .then((slip) => {
+        injector(slip.id, slip.advice);
+        return advice();
+      })
+      .then((advice) => {
+        localStorage.setItem("id", advice.id);
+        localStorage.setItem("advice", advice.advice);
       })
       .catch((err) => console.log(err));
   }
-  advice()
-    .then((advice) => {
-      localStorage.setItem("id", advice.id);
-      localStorage.setItem("advice", advice.advice);
-    })
-    .catch((err) => console.log(err));
 };
 runner();
 pointer.addEventListener("click", () => {
   runner();
 });
-setInterval(() => {
-  if (heading.textContent === localStorage.getItem("id")) {
-    runner();
-  }
-}, 1000);
